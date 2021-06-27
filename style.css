@@ -1,0 +1,850 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+font-family: 'Poppins', sans-serif;
+}
+
+.my-container{
+    width: 95%;
+    margin: 0 auto;
+}
+
+/* ########################## Utilities ################################ */
+
+.t-w{
+    color: white;
+}
+
+.c-b{
+    color: #1d1d22;
+}
+
+.bg-c-b{
+    background-color: #1d1d22;
+}
+
+.sm-text{
+    font-size: 0.8rem;
+}
+
+.rg-text{
+    font-size: 1rem;
+}
+
+.md-text{
+    font-size: 1.3rem;
+}
+
+.b-text{
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.eb-text{
+    font-weight: 700;
+    font-size: 2.4rem;
+}
+
+.my-link{
+    text-decoration: none;
+}
+
+.my-link:link{
+    text-decoration: none;
+}
+
+.my-link:visited{
+    text-decoration: none;
+}
+
+.heading-t-padding{
+    margin-bottom: 1.4rem;
+}
+
+.te-center{
+    text-align: center;
+}
+
+.my-btn-1, .my-btn-2{
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-radius: 25px;
+}
+
+.my-h-buttons{
+    padding-left: 1rem;
+}
+
+.my-btn-1{
+    background-color: #fff;
+    margin-right: 1rem;
+}
+
+.my-btn-2{
+    background-color: #fcb986;
+}
+
+
+/* ########################## Nave Styling ############################### */
+
+.nav-bar{
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.my-logo{
+    padding-top: 0.2rem;
+}
+
+.logo-img{
+    height: 40px;
+    object-fit: cover;
+}
+
+header{
+   position: relative;
+}
+
+nav{
+    z-index: 4;
+    background-color: #1d1d22e3;
+    position: fixed;
+    width: 100%;
+}
+
+.nbar-items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.m-items{
+    list-style-type: none;
+    margin-left: 0.4rem;
+    margin-right: 0.4rem;
+    padding: 0.6rem;
+}
+
+.m-items a{
+    color: white;
+    transition: all 0.4s ease-in;
+}
+
+.m-items a:hover{
+    color: #fcb986;
+}
+/* #################### Side Nave ##################### */
+
+.m-n-sp{
+    display: none;
+    z-index: 3;
+    font-size: 30px;
+    padding-right: 1rem;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 4;
+    top: 0;
+    right: 0%;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+/* ################## Header Styling ####################################### */
+
+
+.h-content{
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("./img/coookie\ head-image.jpg");
+    object-fit: cover;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    width: auto;
+    margin: 0;
+}
+
+.h-content-text{
+    padding-top: 16rem;
+    padding-left: 1rem;
+}
+
+.h-content-text p{
+    padding-bottom: 2rem;
+}
+
+/* ################### Section-02 ########################### */
+
+.section-02{
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    background-color: rgb(255, 255, 255);
+}
+
+.s-02-content{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0 auto;
+}
+
+
+.s-02-b1{
+    width: 46%;
+    text-align: center;
+    padding-bottom: 2rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+}
+
+.s-02-b2{
+    width: 54%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.feature-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 195px;
+    width: 195px;
+    margin: 0.8rem;
+}
+
+.feature-box-1, .feature-box-2, .feature-box-3, .feature-box-4{
+    border-radius: 20px;
+    background: #fff;
+    box-shadow: 7px 7px 12px #00000015;
+    transition: all 0.3s ease-out;
+}
+
+.feature-box-1:hover{
+    box-shadow: 12px 12px 16px #00000010, -6px -6px 14px #00000010;
+}
+
+.feature-box-2:hover{
+    box-shadow: 12px 12px 16px #00000010, -6px -6px 14px #00000010;
+}
+
+.feature-box-3:hover{
+    box-shadow: 12px 12px 16px #00000010, -6px -6px 14px #00000010;
+}
+
+.feature-box-4:hover{
+    box-shadow: 12px 12px 16px #00000010, -6px -6px 14px #00000010;
+}
+
+.f-c-b-i{
+    display: block;
+    height: 70%;
+}
+
+.f-c-b-i img{
+    text-align: center;
+    height: 95px;
+    margin: 1.2rem auto;
+}
+
+.f-c-b{
+    display: block;
+    height: 30%;
+}
+
+.f-c-b p{
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding: auto;
+    color: #333333ff;
+}
+
+.element.style {
+    transition: all 0.4s ease-in;
+}
+
+element.style:hover{
+    fill: #fcb986;
+}
+
+
+/* ###################### section 3 ############################### */
+
+.section-03{
+    background-color: #1d1d22;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+
+.cookie-detailes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.cookie-im img{
+    object-fit: contain;
+    max-height: 360px;
+    width: 100%;
+}
+
+.cookie-im, .cookie-de-text{
+    align-content: center;
+    width: 50%;
+}
+
+.cookie-de-text{
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+.cookie-de-text h2{
+    text-align: center;
+}
+
+
+#myTable {
+    box-shadow: 7px 7px 12px #5c5c5c15;
+    color: #333333ff;
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid rgb(243, 243, 243);
+    font-size: 18px;
+}
+  
+#myTable th{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 22px;
+}
+
+#myTable td{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 22px;
+}
+
+.text-cen{
+    text-align: center;
+}
+
+  
+#myTable tr {
+    background-color: rgb(255, 255, 255);
+    border-bottom: 1px solid rgb(243, 243, 243);
+}
+  
+#myTable tr.t-header, #myTable tr:hover {
+    background-color: rgb(241, 241, 241);
+}
+
+
+
+/* ######################### Section 4 ########################## */
+
+.section-04{
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+
+.place-order{
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+}
+
+.cookie-type{
+    position: relative;
+    width: 300px;
+    height: 520px;
+    margin: 0.6rem;
+}
+
+.cookie-type-1{
+    background-image: url('./img/Cookie-type-01.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.cookie-type-2{
+    background-image: url('./img/Cookie-type-02.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.cookie-type-3{
+    background-image: url('./img/Cookie-type-03.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.order-h-window{
+    display: unset;
+    opacity: 0;
+    position: absolute;
+    height:280px;
+    background-color: #1d1d1dcc;
+    padding: 1rem;
+    bottom: 280px;
+    transition: all 0.6s ease-in-out;
+}
+
+.cookie-type:hover .order-h-window{
+    height:280px;
+    background-color: #1d1d1dcc;
+    padding: 1rem;
+    bottom: 0;
+    display: initial;
+    opacity: 100%;
+}
+
+/* .order-h-window{
+    position: absolute;
+    z-index: 1;
+    height:280px;
+    background-color: #1d1d1dcc;
+    padding: 1rem;
+    bottom: 0;
+} */
+
+.order-h-window h3{
+    font-weight: 500;
+}
+
+.order-h-window p{
+    padding-bottom: 1rem;
+}
+
+.order-btn{
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background-color: #fff;
+    border-radius: 25px;
+}
+
+/* ####################### Section 5 ###################### */
+
+.section-05{
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+
+.what-pep-s{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wps-box{
+    padding: 1rem;
+}
+
+.section-05{
+    background-color: #1d1d22;
+}
+
+.wps-box{
+    width: 50%;
+}
+
+/* Slideshow container */
+ .slideshow-container {
+    position: relative;
+    background: #f1f1f100;
+  }
+  
+  /* Slides */
+  .mySlides {
+    display: none;
+    padding: 80px;
+    text-align: center;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -30px;
+    padding: 16px;
+    color: #888;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    position: absolute;
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {color: #fcb986;}
+  
+  /* The dot/bullet/indicator container */
+  .dot-container {
+    text-align: center;
+    padding: 20px;
+    background: #ddd;
+  }
+  
+  
+  /* Add an italic font style to all quotes */
+  q {font-style: italic; color: white;}
+  
+  /* Add a blue color to the author */
+
+.author {color: #fcb986} 
+
+.wps-box-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pe-say-image{
+    max-height: 260px;
+    margin: 0 auto;
+}
+
+/* ####################### Section 6 ######################## */
+
+.section-06{
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("./img/Cookie-form.jpg");
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-position: center;
+    background-size: cover;
+    height: auto;
+    width: auto;
+    margin: 0;
+}
+
+input[type=text], select {
+    background-color: #fcf0e7ec;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: block;
+    border: none;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+
+ 
+.c-submit-btn {
+    width: 100%;
+    background-color: #fcb986;
+    color: #1d1d22;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+  
+.c-submit-btn:hover {
+    background-color: #eca36a;
+}
+  
+  
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    background-color: #fcf0e7ec;
+}
+
+.f-container{
+    margin: 0 auto;
+    width: 66%;
+}
+
+/* ######################## Footer Styling ##################### */
+
+footer{
+    background-color: #1d1d22;
+    padding-top: 0.6rem;
+}
+
+.f-items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-c{
+    width: 33.3333333333333%;
+    padding: 1.2rem;
+}
+
+.footer-c-1 img{
+    width: 160px;
+    padding-bottom: 0.8rem;
+}
+
+.footer-c-1 p{
+    padding-bottom: 1rem;
+}
+
+.footer-c-1 ul{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    list-style-type: none;
+}
+
+.s-icon{
+    margin-left: 0.6rem;
+    margin-right: 0.6rem;
+}
+
+.li-icon, .tw-icon, .fb-icon, .ig-icon{
+    color: white;
+    transition: all 0.4s ease-in-out;
+}
+
+.li-icon:hover{
+    color: #0e76a8;
+}
+
+.tw-icon:hover{
+    color: #1DA1F2;
+}
+
+.fb-icon:hover{
+    color: #4267B2;
+}
+
+.ig-icon:hover{
+    color: #f5548a;
+}
+
+
+.footer-c-2 ul li{
+    list-style: none;
+}
+
+.footer-c-3 h3{
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+.sub-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sub-em-box{
+    border-style: none;
+    outline-style: none;
+    display: inline;
+    margin: 0;
+    width: 64%;
+    padding: 11px;
+    height: 40px;
+    border: 1px solid #ccc;
+    border-radius: 4px 0px 0px 4px;
+    resize: horizontal;
+    background-color: #fcf0e7ec;
+}
+
+
+.e-sub-btn{
+    border-style: none;
+    outline-style: none;
+    display: inline;
+    width: 36%;
+    background-color: #fcb986;
+    color: #1d1d22;
+    padding: 10px 16px;
+    height: 40px;
+    margin: 0;
+    border: none;
+    border-radius: 0px 4px 4px 0px;
+    cursor: pointer;
+}
+  
+.e-sub-btn:hover{
+    background-color: #eca36a;
+}
+
+.copy-right{
+    background-color: #2a2a31;
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+}
+
+
+/* #################### Responcive ############################# */
+
+
+@media (max-width: 1024px){
+    
+}
+
+
+@media (max-width: 919px){
+    
+    .s-02-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .s-02-box{
+        width: 100%;  
+    }
+
+    .h-content-text{
+        padding-top: 14rem;
+    }
+    
+    .cookie-detailes{
+        flex-direction: column;
+    }
+
+    .cookie-im, .cookie-de-text{
+        width: 100%;
+    }
+
+    .what-pep-s{
+        flex-direction: column-reverse;
+    }
+
+    .wps-box{
+        width: 100%;
+    }
+}
+
+@media (max-width: 841px){
+
+}
+
+@media (max-width: 767px){
+
+}
+
+@media (max-width: 575px){
+    
+}
+
+@media (max-width: 689px){
+    .nav-items{
+        display: none;
+    }
+
+    .m-n-sp{
+        display: initial;
+    }
+
+    .place-order{
+        flex-direction: column;
+    }
+
+    .cookie-type{
+        margin: 0.6rem auto;
+    }
+
+    .f-container{
+        width: 100%;
+    }
+
+    .f-items{
+        flex-direction: column;
+    }
+
+    .footer-c{
+        width: 100%;
+    }
+
+    .section-02, .section-03, .section-04, .section-05, .section-06{
+        padding-top: 2.8rem;
+        padding-bottom: 2.8rem;
+    }
+
+    .order-h-window{
+        display: initial;
+        opacity: 100;
+        position: absolute;
+        height:280px;
+        background-color: #1d1d1dcc;
+        padding: 1rem;
+        bottom: 0px;
+        transition: all 0.6s ease-in-out;
+    }
+
+    .h-content-text{
+        padding-top: 12rem;
+    }
+}
+
+@media (max-width: 393px){}
